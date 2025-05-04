@@ -11,7 +11,7 @@ export default function Login() {
 
   useEffect(() => {
     if (token) {
-      navigate("..");
+      navigate("/quizForAlphacore");
     }
   }, [navigate, token]);
 
@@ -19,7 +19,7 @@ export default function Login() {
     mutationFn: login,
     onSuccess: (data) => {
       localStorage.setItem("alphacoreTestToken", data);
-      navigate("..");
+      navigate("/quizForAlphacore");
     },
   });
 

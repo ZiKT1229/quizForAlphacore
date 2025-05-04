@@ -9,11 +9,11 @@ import { OrderContextProvider } from "./store/OrderContext";
 
 const router = createBrowserRouter([
   {
-    path: "/quizForAlphacore/",
+    path: "/quizForAlphacore",
     element: <Root />,
     children: [
       {
-        path: "/quizForAlphacore/",
+        path: "/quizForAlphacore",
         element: <OrderList />,
       },
       {

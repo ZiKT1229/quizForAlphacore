@@ -15,7 +15,7 @@ export default function OrderList() {
 
   useEffect(() => {
     if (!token) {
-      navigate("/login");
+      navigate("/quizForAlphacore/login");
     }
   }, [navigate, token]);
 
